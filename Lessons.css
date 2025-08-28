@@ -1,0 +1,105 @@
+/* علشان الـ footer يفضل تحت */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* موف + أزرق */
+  color: #fff;
+}
+
+/* Glass Navbar */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.glass-navbar .nav-link {
+  color: #fff !important;
+  transition: 0.3s;
+}
+.glass-navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+.glass-navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* عنوان الدرس */
+h2 {
+  color: #ffd700;
+}
+
+/* الفيديو */
+.ratio {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* الأزرار */
+.btn {
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-success {
+  background: #28a745;
+  border: none;
+}
+.btn-success:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+.btn-primary {
+  background: #007bff;
+  border: none;
+}
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Animation on scroll */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.lesson-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.lesson-header h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #ffd700; /* لون دهبي */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}

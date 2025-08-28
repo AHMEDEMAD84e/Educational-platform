@@ -1,0 +1,39 @@
+/* Hero Offers Section */
+.hero-offers {
+  height: 60vh;
+  background: linear-gradient(135deg, #28a745, #6f42c1);
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-card {
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.offer-card:hover {
+  transform: translateY(-8px);
+}
+.glass-navbar .nav-link {
+  position: relative;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.glass-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.glass-navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.glass-navbar .nav-link:hover::after {
+  width: 100%;
+}

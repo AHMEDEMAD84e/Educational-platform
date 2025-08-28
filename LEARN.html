@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة BioChemic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="LEARN.css">
+   <link rel="icon" type="Images/x-icon" href="images/BioChemic Logo Design.png">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow-sm glass-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <span class="text-success">Bio</span><span class="text-primary">Chemic</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="login.html">تسجيل الدخول</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-2 rounded-pill" href="singup.html">إنشاء حساب</a></li>
+        <li class="nav-item"><button id="toggleDarkMode" class="btn btn-sm btn-warning ms-2">🌙</button></li>
+      </ul>
+
+      <!-- زرار اشترك الآن -->
+      <a href="singup.html" class="btn btn-gradient ms-3">اشترك الآن</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero d-flex align-items-center text-center text-white">
+  <div class="container position-relative">
+    <h1 class="display-3 fw-bold">أهلاً بك في منصة <span class="text-success">Bio</span><span class="text-primary">Chemic</span></h1>
+    <p class="lead">تعلم مع أفضل الأساتذة بطريقة حديثة وممتعة</p>
+    <a href="subjects.html" class="btn btn-lg btn-success mt-3">ابدأ الآن</a>
+  </div>
+</section>
+
+<!-- Teachers Cards -->
+<section class="teachers-section py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Card مدرس 1 -->
+      <div class="col-md-6">
+        <div class="teacher-card-overlay">
+          <img src="images/Hero (2).png" class="teacher-img" alt="مدرس كيمياء">
+          <div class="teacher-info">
+            <div>
+              <h3>أ. أحمد جمعه</h3>
+              <p>أستاذ الكيمياء بخبرة أكثر من 10 سنوات.</p>
+              <a href="Offers Chemistry/Offers Chemisrty.html" class="btn btn-warning mt-2">الكيمياء</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card مدرس 2 -->
+      <div class="col-md-6">
+        <div class="teacher-card-overlay">
+          <img src="Study materials/Images2/Biology.png" class="teacher-img" alt="مدرس أحياء">
+          <div class="teacher-info">
+            <div>
+              <h3>أ/ أحمد مصطفي</h3>
+              <p>أستاذ الأحياء بخبرة طويلة في تبسيط أصعب المعلومات.</p>
+              <a href="Offers Biology/Offers Biology.html" class="btn btn-success mt-2">الأحياء</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section py-5 text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">عن منصة <span class="text-success">Bio</span><span class="text-primary">Chemic</span></h2>
+    <p class="lead mb-4">
+      منصة BioChemic صممت خصيصاً لدعم الطلاب في الكيمياء والأحياء بطريقة سهلة وممتعة باستخدام أساليب التدريس الحديثة.
+      هدفنا أن تجعل التعلم ممتع ومبسط لجميع الطلاب.
+    </p>
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+      <div class="about-card p-4 shadow-sm rounded">
+        <i class="bi bi-journal-bookmark-fill fs-2 text-primary"></i>
+        <h5 class="mt-2 fw-bold">دروس منظمة</h5>
+        <p class="mb-0">محتوى مرتب وسهل المتابعة لجميع المستويات.</p>
+      </div>
+      <div class="about-card p-4 shadow-sm rounded">
+        <i class="bi bi-people-fill fs-2 text-success"></i>
+        <h5 class="mt-2 fw-bold">أساتذة خبرة</h5>
+        <p class="mb-0">أكفأ المعلمين بخبرة كبيرة لتبسيط العلوم.</p>
+      </div>
+      <div class="about-card p-4 shadow-sm rounded">
+        <i class="bi bi-laptop-fill fs-2 text-warning"></i>
+        <h5 class="mt-2 fw-bold">تعلم إلكتروني</h5>
+        <p class="mb-0">استفد من أساليب حديثة ووسائط متعددة أثناء التعلم.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+   <p class="mb-0">© AHMED EMAD IBRAHIM - جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="LEARN.JS"></script>
+</body>
+</html>

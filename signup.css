@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(135deg, #00c851, #33b5e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Tahoma, sans-serif;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.btn-success {
+  transition: 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+}

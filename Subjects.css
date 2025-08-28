@@ -1,0 +1,93 @@
+/* علشان الـ footer يفضل تحت */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(135deg, #7b2ff7, #9f44d3, #c084fc);
+  color: #fff;
+}
+
+/* Glass Navbar */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.glass-navbar .nav-link {
+  color: #fff !important;
+  transition: 0.3s;
+}
+.glass-navbar .nav-link:hover {
+  color: #ffeb3b !important;
+}
+.glass-navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff !important;
+}
+
+/* Section */
+.choose-section {
+  padding: 120px 0 60px;
+  text-align: center;
+}
+.choose-section h1 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* البوكسات */
+.subject-box {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 60px 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.subject-box:hover {
+  transform: scale(1.05);
+}
+
+/* الأحياء */
+.biology-box {
+  border-color: #81e6d9;
+  color: #81e6d9;
+}
+.biology-box:hover {
+  background: #81e6d9;
+  color: #1a202c;
+}
+
+/* الكيمياء */
+.chemistry-box {
+  border-color: #63b3ed;
+  color: #63b3ed;
+}
+.chemistry-box:hover {
+  background: #63b3ed;
+  color: #1a202c;
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: auto;
+}

@@ -1,0 +1,162 @@
+/* Reset */
+html, body { margin: 0; padding: 0; overflow-x: hidden; font-family: 'Tahoma', sans-serif; }
+img { max-width: 100%; display: block; height: auto; }
+
+/* Navbar */
+/* زرار اشترك الآن */
+.btn-gradient {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff !important;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.custom-navbar {
+  margin: 10px auto;
+  width: 95%;
+  border-radius: 20px;
+  padding: 12px 25px;
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(25px) saturate(180%); 
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.custom-navbar:hover {
+  background: rgba(255, 255, 255, 0.25); /* أفتح شوية عند الهوفر */
+  transform: scale(1.01);
+}
+
+/* Hero */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1, 
+.hero p, 
+.hero a {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero h1 { animation-delay: 0.2s; }
+.hero p { animation-delay: 0.6s; }
+.hero a { animation-delay: 1s; }
+.hero {
+   position: relative;
+  background: url("images/Hero (2).png") center/cover no-repeat;
+   height: 100vh;
+  display:flex;
+   justify-content:center;
+    align-items:center;
+     color:#fff; 
+     text-align:center; 
+     overflow:hidden; }
+.hero::after { 
+  content:""; 
+  position:absolute;
+   top:0; 
+   left:0; 
+   width:100%; 
+   height:100%;
+  background: linear-gradient(135deg, rgba(103,58,183,0.85), rgba(63,81,181,0.85), rgba(33,150,243,0.85));
+   z-index:1; }
+.hero .container {
+   position: relative; 
+   z-index: 2; }
+/* Teacher Cards */
+.teachers-section { 
+  padding: 60px 0; 
+  background: linear-gradient(135deg,#ede7f6,#e8eaf6,#f3e5f5); }
+.teacher-card-overlay { 
+  position: relative;
+   width:100%;
+  height:300px;
+    overflow:hidden;
+    cursor:pointer;
+     margin:0;
+    border-radius:0; }
+.teacher-card-overlay img.teacher-img {
+   position:absolute; 
+   top:0; 
+   left:0;
+  width:100%; 
+  height:100%; 
+  object-fit:cover; 
+  transition: transform 0.3s ease; }
+.teacher-card-overlay:hover img.teacher-img { 
+  transform: scale(1.1); }
+.teacher-info { 
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:100%; 
+  background: rgba(0,0,0,0.6); 
+  color:#fff; 
+  display:flex; 
+  justify-content:center; 
+  align-items:center; 
+  text-align:center; 
+  opacity:0; 
+  transition:opacity 0.3s ease; 
+  padding:15px; }
+.teacher-card-overlay:hover .teacher-info { opacity:1; }
+.teacher-info .btn {
+   margin-top:10px; 
+  transition: transform 0.2s; }
+.teacher-info .btn:hover {
+   transform: scale(1.05); }
+
+/* About Section */
+.about-section { 
+  text-align:center;
+   padding:80px 20px; 
+   background: linear-gradient(135deg,#f3e5f5,#ede7f6,#e8eaf6); }
+.about-section h2 { 
+  font-size:2.5rem; 
+  color:#4527a0; }
+.about-section p.lead { 
+  color:#6c757d; 
+  max-width:800px; 
+  margin:0 auto 40px auto; }
+.about-card { 
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.about-card:hover { 
+  transform: translateY(-8px); 
+  box-shadow:0 12px 28px rgba(0,0,0,0.15); }
+.about-card i {
+   transition: transform 0.3s ease; }
+.about-card:hover i { 
+  transform: scale(1.2); }
+
+/* Footer */
+footer { text-align:center; padding:20px 0; }
+
+/* Dark Mode */
+body.dark-mode { background:#121212; color:#f5f5f5; }
+body.dark-mode .teachers-section { background: linear-gradient(135deg,#1c1c2c,#2a2a40,#1e1e3a); }
+body.dark-mode .teacher-card-overlay .teacher-info { background: rgba(0,0,0,0.85); }
+body.dark-mode .about-section { background: linear-gradient(135deg,#1c1c2c,#2a2a40,#1e1e3a); color:#f5f5f5; }
+body.dark-mode .about-card { background:#2c2c44; color:#f5f5f5; }
